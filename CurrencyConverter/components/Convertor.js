@@ -25,3 +25,26 @@ export default function Convertor() {
         setConvertedAmount(null);
         setAmount('');
     };
+
+            <View style={styles.header}>
+                <Text variant='headlineLarge'>Currency Converter</Text>
+            </View>
+            <View style={styles.body}>
+                <TextInput
+                    label={`Amount in ${conversionDirection.split(' ')[0]}`}
+                    mode="outlined"
+                    keyboardType="numeric"
+                    value={amount}
+                    onChangeText={setAmount}
+                    style={styles.input}
+                />
+                <Divider />
+                <Button mode="contained" onPress={handleConvert} style={styles.button}>
+                    Convert to {conversionDirection.split(' ')[2]}
+                </Button>
+
+                {convertedAmount && (
+                    <Text variant="bodyLarge" style={styles.result}>
+                        {`${amount} ${conversionDirection.split(' ')[0]} = ${convertedAmount} ${conversionDirection.split(' ')[2]}`}
+                    </Text>
+                )}
