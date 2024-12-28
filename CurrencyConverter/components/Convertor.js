@@ -26,6 +26,11 @@ export default function Convertor() {
         setAmount('');
     };
 
+
+    return (
+
+
+        <>
             <View style={styles.header}>
                 <Text variant='headlineLarge'>Currency Converter</Text>
             </View>
@@ -48,6 +53,17 @@ export default function Convertor() {
                         {`${amount} ${conversionDirection.split(' ')[0]} = ${convertedAmount} ${conversionDirection.split(' ')[2]}`}
                     </Text>
                 )}
+
+                <Button mode="outlined" onPress={toggleConversionDirection} style={styles.toggleButton}>
+                    Switch to {conversionDirection === 'Rs to USD' ? 'USD to Rs' : 'Rs to USD'}
+                </Button>
+            </View>
+            <View style={styles.footer}>
+                <Text variant='bodyMedium'>Made by: IT3133 Practical Sessions</Text>
+            </View>
+        </>
+    );
+}
 
 const styles = StyleSheet.create({
     header: {
