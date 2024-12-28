@@ -48,3 +48,37 @@ export default function Convertor() {
                         {`${amount} ${conversionDirection.split(' ')[0]} = ${convertedAmount} ${conversionDirection.split(' ')[2]}`}
                     </Text>
                 )}
+
+const styles = StyleSheet.create({
+    header: {
+        flex: 3,
+        width: '100%',
+        alignItems: 'center',
+        padding: 20,
+        marginBottom: 20
+    },
+    body: {
+        flex: 5,
+        width: '100%',
+
+    },
+    footer: {
+        flex: 2,
+        width: '100%',
+        alignItems: 'center',
+        marginTop: 20
+    },
+    input: {
+        marginBottom: 20
+    },
+    button: {
+        marginVertical: 10,
+    },
+    toggleButton: {
+        marginTop: 10,
+    },
+    result: {
+        textAlign: 'center',
+        marginTop: 20,
+    },
+})
