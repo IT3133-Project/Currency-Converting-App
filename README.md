@@ -73,6 +73,10 @@ Follow these steps:
 - `App.js`: Main component that wraps the app in necessary providers like `PaperProvider`, `SafeAreaProvider`, and handles layout with a keyboard-aware scroll view.
 - `Convertor.js`: Component that handles the input, conversion logic, and displaying results. It uses `useState` for state management of amount, converted amount, and conversion direction.
 
+## Screenshot
+![alt text](./output/RS%20to%20USD.jpg).
+![alt text](./output/USD%20to%20RS.jpg).
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
